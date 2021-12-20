@@ -1,1 +1,31 @@
 @import url("./reset.css");
+@import url("./header.css");
+
+a {
+  text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* fonts */
+/* font-family: 'Nunito', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+/* vars */
+:root {
+    --font-text: "Nunito", sans-serif;
+    --main-color: #f96900;
+}
