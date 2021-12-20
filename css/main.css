@@ -1,13 +1,23 @@
 @import url("./reset.css");
 @import url("./header.css");
 @import url("./slider.css");
+@import url("./popular.css");
+
+body {
+  background-color: #fff;
+}
 
 a {
   text-decoration: none;
 }
 
 img {
-    display: block;
+  display: block;
+}
+
+h2 {
+  font: 700 24px/33px var(--font-text);
+  color: #000;
 }
 
 .wrapper {
@@ -23,10 +33,11 @@ img {
 /* fonts */
 /* font-family: 'Nunito', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
 
 /* vars */
 :root {
-    --font-text: "Nunito", sans-serif;
-    --main-color: #f96900;
+  --font-text: "Nunito", sans-serif;
+  --main-color: #f96900;
 }

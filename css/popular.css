@@ -1,0 +1,33 @@
+.new {
+  padding: 70px 0;
+}
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.popular__item {
+  width: 250px;
+  height: 104px;
+  box-shadow: 0 5px 5px gray;
+  border-radius: 5px;
+}
+
+.popular__item > img {
+  float: left;
+  margin: 14px 22px 14px 18px;
+}
+
+.popular__pizza {
+  font: 400 14px/19px var(--font-text);
+  color: #000;
+  margin: 29px 0 4px;
+}
+
+.popular__price {
+  font: 600 16px/22px var(--font-text);
+  color: #000;
+}
