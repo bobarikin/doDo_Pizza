@@ -1,34 +1,35 @@
-.pizza__container {
+.grid__container {
     display: grid;
     grid-template-columns: repeat(4, 250px);
+    grid-auto-flow: row;
     grid-gap: 60px 20px;
     margin: 40px 0 70px;
 }
 
-.pizza__elem {
+.grid__elem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.pizza__elem img {
+.grid__elem img {
     margin: 0 15px;
 }
 
-.pizza__elem h3 {
+.grid__elem h3 {
     margin: 5px 56px 10px 0;
     font: 600 20px/27px var(--font-text);
     color: var(--font-text);
     white-space: nowrap;
 }
 
-.pizza__elem > p {
+.grid__elem > p {
     font: 400 14px/19px var(--font-text);
     color: #73798C;
     margin-bottom: 30px;
 }
 
-.pizza__elem_bottom {
+.grid__elem_bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
