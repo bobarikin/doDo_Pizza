@@ -2,6 +2,7 @@
 @import url("./header.css");
 @import url("./slider.css");
 @import url("./popular.css");
+@import url("./pizza.css");
 
 body {
   background-color: #fff;
@@ -28,6 +29,26 @@ h2 {
 .container {
   max-width: 1060px;
   margin: 0 auto;
+}
+
+.button_orange button {
+  font: 600 16px/22px var(--font-text);
+  color: #fff;
+  padding: 9px 20px;
+  background-color: var(--main-color);
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button_gray button {
+  font: 600 16px/22px var(--font-text);
+  color: #D15700;
+  padding: 9px 20px;
+  background-color: #FFF0E6;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 /* fonts */

@@ -50,13 +50,3 @@ header {
     color: var(--main-color);
     transition: 0.3s;
   }
-
-.button_orange button {
-  font: 600 16px/22px var(--font-text);
-  color: #fff;
-  padding: 9px 20px;
-  background-color: var(--main-color);
-  border: 0;
-  border-radius: 20px;
-  cursor: pointer;
-}
