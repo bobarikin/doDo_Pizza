@@ -20,7 +20,7 @@
     margin: 5px 56px 10px 0;
     font: 600 20px/27px var(--font-text);
     color: var(--font-text);
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .grid__elem > p {
