@@ -11,12 +11,24 @@ footer {
   font: 400 18px/26px var(--font-text);
   color: #fff;
   opacity: 0.7;
+  transition: 0.3s;
+}
+
+.footer__list_primary li ul li a:hover {
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .footer__list_primary li ul li:first-child a {
   font-weight: 600;
   color: #fff;
   opacity: 1;
+  transition: 0.3s;
+}
+
+.footer__list_primary li ul li:first-child a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 .footer_top {
@@ -118,4 +130,10 @@ footer {
     font: 400 16px/22px var(--font-text);
     color: #fff;
     opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer__links > ul > li > a:hover {
+  opacity: 1;
+  transition: 0.3s;
 }

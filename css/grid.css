@@ -13,11 +13,11 @@
 }
 
 .grid__elem img {
-    margin: 0 15px;
+    margin: 0 auto;
 }
 
 .grid__elem h3 {
-    margin: 5px 56px 10px 0;
+    margin: 5px 0 10px;
     font: 500 20px/27px var(--font-text);
     color: var(--font-text);
 }
