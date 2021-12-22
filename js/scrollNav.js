@@ -1,5 +1,5 @@
-var navbar = document.getElementById("header_sticky");
-var sticky = navbar.offsetTop;
+const navbar = document.getElementById("header_sticky");
+const sticky = navbar.offsetTop;
 
 window.addEventListener("scroll", function () {
   if (window.pageYOffset >= sticky) {

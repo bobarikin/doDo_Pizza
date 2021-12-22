@@ -22,7 +22,6 @@ html {
 
 body {
   background-color: #fff;
-  /* overflow: hidden; */
 }
 
 a {
@@ -80,6 +79,7 @@ button {
 #button_dynamic {
   cursor: pointer;
 }
+
 
 /* vars */
 :root {
