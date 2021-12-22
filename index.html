@@ -8,13 +8,95 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="popup" style="display: none;">
+      <!-- pizza modal window  -->
+      <div class="pizza-modal-window">
+        <!-- для псевдоэлемента закрытия -->
+        <span class="close"></span>
+        <div class="ellipse">
+          <img
+            src="./img/pizza-modal-window/pizza-modal.png"
+            alt="pizza modal window"
+          />
+        </div>
+        <div class="chioce-pizza">
+          <h2>Чиззи чеддер</h2>
+          <p>30 см, традиционное тесто, 480 г</p>
+          <span>Ветчина, </span>
+          <span>сыр чеддер, </span>
+          <span>сладкий перец, </span>
+          <span>моцарелла, </span>
+          <span>томатный соус, </span>
+          <span>чеснок, </span>
+          <span>итальянские травы</span>
+          <div class="size-pizza">
+            <input type="radio" id="mini" name="size" value="mini" />
+            <label for="mini">Маленькая</label>
+            <input type="radio" id="mid" name="size" value="mid" />
+            <label for="mid">Средняя</label>
+            <input type="radio" id="big" name="size" value="big" />
+            <label for="big">Большая</label>
+          </div>
+          <div class="dough-pizza">
+            <input type="radio" id="tradit" name="dough" value="tradit" />
+            <label for="mini">Маленькая</label>
+            <input type="radio" id="thin" name="dough" value="thin" />
+            <label for="mid">Тонкое</label>
+          </div>
+          <h3>Добавить в пиццу</h3>
+          <div class="choice-pizza__grid">
+            <div class="choice-pizza__grid__elem">
+              <img
+                src="./img/pizza-modal-window/bortik.png"
+                alt="сырный бортик"
+              />
+              <p>Сырный бортик</p>
+              <p>599 &#8381;</p>
+            </div>
+            <div class="choice-pizza__grid__elem">
+              <img src="./img/pizza-modal-window/shamps.png" alt="шампиньоны" />
+              <p>Шампиньоны</p>
+              <p>39 &#8381;</p>
+            </div>
+            <div class="choice-pizza__grid__elem">
+              <img src="./img/pizza-modal-window/chikken.png" alt="цыпленок" />
+              <p>Цыплёнок</p>
+              <p>59 &#8381;</p>
+            </div>
+            <div class="choice-pizza__grid__elem">
+              <img src="./img/pizza-modal-window/brynza.png" alt="брынза" />
+              <p>Брынза</p>
+              <p>59 &#8381;</p>
+            </div>
+            <div class="choice-pizza__grid__elem">
+              <img
+                src="./img/pizza-modal-window/holopeni.png"
+                alt="халапенью"
+              />
+              <p>Острый халапеньо</p>
+              <p>39 &#8381;</p>
+            </div>
+            <div class="choice-pizza__grid__elem">
+              <img
+                src="./img/pizza-modal-window/chili.png"
+                alt="острый цыпленок"
+              />
+              <p>Острый цыпленок</p>
+              <p>59 &#8381;</p>
+            </div>
+          </div>
+          <button>Добавить в корзину за 625 &#8381;</button>
+        </div>
+      </div>
+    </div>
     <!-- обёрка шириной 1280px для корректного отображения слайдера -->
     <div class="wrapper">
       <!-- header -->
       <header>
         <!-- основной контейнер для контента шириной 1060px -->
         <div class="container">
-          <div class="header">
+          <!-- header -->
+          <div id="head" class="header">
             <div class="header__elem">
               <div class="header__logo">
                 <img id="logo" src="./img/header/logo.svg" alt="logo" />
@@ -26,14 +108,15 @@
                 <p>Звонок бесплатный</p>
               </div>
             </div>
-            <div class="header__elem header_stiky">
+            <div id="header_sticky" class="header__elem">
               <nav class="header__menu">
+                <a href="#head"><img id="header_sticky_logo" src="./img/header/logo.svg" alt=""></a>
                 <ul>
-                  <li><a href="#">Пицца</a></li>
-                  <li><a href="#">Комбо</a></li>
-                  <li><a href="#">Закуски</a></li>
-                  <li><a href="#">Десерты</a></li>
-                  <li><a href="#">Напитки</a></li>
+                  <li><a href="#pizza">Пицца</a></li>
+                  <li><a href="#combo">Комбо</a></li>
+                  <li><a href="#snacks">Закуски</a></li>
+                  <li><a href="#sweets">Десерты</a></li>
+                  <li><a href="#drink">Напитки</a></li>
                   <li><a href="#">Другие товары</a></li>
                 </ul>
               </nav>
@@ -84,7 +167,7 @@
           </div>
         </section>
         <!-- pizza -->
-        <section class="pizza">
+        <section id="pizza" class="pizza">
           <div class="container">
             <h2>Пицца</h2>
             <!-- контейнер для grid элементов -->
@@ -198,7 +281,7 @@
           </div>
         </section>
         <!-- kombo -->
-        <section class="combo">
+        <section id="combo" class="combo">
           <div class="container">
             <h2>Комбо</h2>
             <div class="grid__container">
@@ -271,7 +354,7 @@
           </div>
         </section>
         <!-- snacks -->
-        <section class="snacks">
+        <section id="snacks" class="snacks">
           <div class="container">
             <h2>Закуски</h2>
             <div class="grid__container">
@@ -363,7 +446,7 @@
           </div>
         </section>
         <!-- sweets -->
-        <section class="sweets">
+        <section id="sweets" class="sweets">
           <div class="container">
             <h2>Десерты</h2>
             <div class="grid__container">
@@ -435,7 +518,7 @@
           </div>
         </section>
         <!-- drinking -->
-        <section class="drinking">
+        <section id="drink" class="drinking">
           <div class="container">
             <h2>Напитки</h2>
             <div class="grid__container">
@@ -605,5 +688,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/scrollNav.js"></script>
   </body>
 </html>

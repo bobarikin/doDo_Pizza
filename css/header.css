@@ -6,17 +6,19 @@ header {
   display: flex;
   flex-direction: column;
   gap: 31px;
+  width: 1060px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header__elem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.wrapper > header > .container > .header_stiky {
-  position: sticky;
-  top: 0;
 }
 
 #logo {
@@ -41,8 +43,8 @@ header {
 }
 
 .header__menu ul {
-    display: flex;
-    gap: 24px
+  display: flex;
+  gap: 24px;
 }
 
 .header__menu ul li a {
@@ -52,6 +54,22 @@ header {
 }
 
 .header__menu ul li a:hover {
-    color: var(--main-color);
-    transition: 0.3s;
-  }
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+#header_sticky {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: inherit;
+  padding: 10px 0;
+}
+
+#header_sticky_logo {
+  display: none;
+}

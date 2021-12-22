@@ -1,0 +1,67 @@
+.pizza-modal-window {
+    width: 920px;
+    height: 610px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 6px 55px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+}
+
+.close {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+    right: -44px;
+    top: 20px;
+}
+
+.close:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.close::before, .close::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.close::before {
+    transform: rotate(45deg);
+}
+
+.close::after {
+    transform: rotate(-45deg);
+}
+
+.ellipse {
+    width: 540px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chioce-pizza {
+    width: 380px;
+}
+
+.choice-pizza__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-flow: row;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.55);
+}
