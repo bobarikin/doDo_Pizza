@@ -10,7 +10,7 @@
   <body>
     <div class="popup">
       <!-- pizza modal window  -->
-      <div class="pizza-modal-window">
+      <div class="pizza-modal-window" onclick="event.stopPropagation()">
         <!-- для псевдоэлемента закрытия -->
         <span class="close"></span>
         <div class="ellipse">
@@ -22,70 +22,155 @@
         <div class="chioce-pizza">
           <h2>Чиззи чеддер</h2>
           <p>30 см, традиционное тесто, 480 г</p>
-          <span>Ветчина, </span>
-          <span>сыр чеддер, </span>
-          <span>сладкий перец, </span>
-          <span>моцарелла, </span>
-          <span>томатный соус, </span>
-          <span>чеснок, </span>
-          <span>итальянские травы</span>
-          <div class="size-pizza">
-            <input type="radio" id="mini" name="size" value="mini" />
-            <label for="mini">Маленькая</label>
-            <input type="radio" id="mid" name="size" value="mid" />
-            <label for="mid">Средняя</label>
-            <input type="radio" id="big" name="size" value="big" />
-            <label for="big">Большая</label>
+          <div>
+            <span>Ветчина, </span>
+            <span>сыр чеддер, </span>
+            <span>сладкий перец, </span>
+            <span>моцарелла, </span>
+            <span>томатный соус, </span>
+            <span>чеснок, </span>
+            <span>итальянские травы</span>
           </div>
-          <div class="dough-pizza">
-            <input type="radio" id="tradit" name="dough" value="tradit" />
-            <label for="mini">Маленькая</label>
-            <input type="radio" id="thin" name="dough" value="thin" />
-            <label for="mid">Тонкое</label>
+
+          <div class="size-pizza custom-radio">
+            <label for="mini">
+              <input type="radio" id="mini" name="size" value="mini" />
+              <span>Маленькая</span>
+            </label>
+
+            <label for="mid">
+              <input type="radio" id="mid" name="size" value="mid" checked />
+              <span>Средняя</span>
+            </label>
+
+            <label for="big">
+              <input type="radio" id="big" name="size" value="big" />
+              <span>Большая</span>
+            </label>
+          </div>
+          <div class="dough-pizza custom-radio">
+            <label for="tradit">
+              <input
+                type="radio"
+                id="tradit"
+                name="dough"
+                value="tradit"
+                checked
+              />
+              <span>Традиционное</span>
+            </label>
+            <label for="thin">
+              <input type="radio" id="thin" name="dough" value="thin" />
+              <span>Тонкое</span>
+            </label>
           </div>
           <h3>Добавить в пиццу</h3>
+
           <div class="choice-pizza__grid">
-            <div class="choice-pizza__grid__elem">
-              <img
-                src="./img/pizza-modal-window/bortik.png"
-                alt="сырный бортик"
-              />
-              <p>Сырный бортик</p>
-              <p>599 &#8381;</p>
+            <div class="choice-pizza__grid__elem custom-check">
+              <label for="bortik">
+                <input
+                  type="checkbox"
+                  id="bortik"
+                  name="bortik"
+                  value="bortik"
+                />
+                <div>
+                  <img
+                    src="./img/pizza-modal-window/bortik.png"
+                    alt="сырный бортик"
+                  />
+                  <p>Сырный бортик</p>
+                  <p>599 &#8381;</p>
+                </div>
+              </label>
             </div>
-            <div class="choice-pizza__grid__elem">
-              <img src="./img/pizza-modal-window/shamps.png" alt="шампиньоны" />
-              <p>Шампиньоны</p>
-              <p>39 &#8381;</p>
+            <div class="choice-pizza__grid__elem custom-check">
+              <label for="shamps">
+                <input
+                  type="checkbox"
+                  id="shamps"
+                  name="shamps"
+                  value="shamps"
+                />
+                <div>
+                  <img
+                    src="./img/pizza-modal-window/shamps.png"
+                    alt="шампиньоны"
+                  />
+                  <p>Шампиньоны</p>
+                  <p>39 &#8381;</p>
+                </div>
+              </label>
             </div>
-            <div class="choice-pizza__grid__elem">
-              <img src="./img/pizza-modal-window/chikken.png" alt="цыпленок" />
-              <p>Цыплёнок</p>
-              <p>59 &#8381;</p>
+            <div class="choice-pizza__grid__elem custom-check">
+              <label for="chikken">
+                <input
+                  type="checkbox"
+                  id="chikken"
+                  name="chikken"
+                  value="chikken"
+                />
+                <div>
+                  <img
+                    src="./img/pizza-modal-window/chikken.png"
+                    alt="цыпленок"
+                  />
+                  <p>Цыплёнок</p>
+                  <p>59 &#8381;</p>
+                </div>
+              </label>
             </div>
-            <div class="choice-pizza__grid__elem">
-              <img src="./img/pizza-modal-window/brynza.png" alt="брынза" />
-              <p>Брынза</p>
-              <p>59 &#8381;</p>
+            <div class="choice-pizza__grid__elem custom-check">
+              <label for="brynza">
+                <input
+                  type="checkbox"
+                  id="brynza"
+                  name="brynza"
+                  value="brynza"
+                />
+                <div>
+                  <img src="./img/pizza-modal-window/brynza.png" alt="брынза" />
+                  <p>Брынза</p>
+                  <p>59 &#8381;</p>
+                </div>
+              </label>
             </div>
-            <div class="choice-pizza__grid__elem">
-              <img
-                src="./img/pizza-modal-window/holopeni.png"
-                alt="халапенью"
-              />
-              <p>Острый халапеньо</p>
-              <p>39 &#8381;</p>
+            <div class="choice-pizza__grid__elem custom-check">
+              <label for="holopeni">
+                <input
+                  type="checkbox"
+                  id="holopeni"
+                  name="holopeni"
+                  value="holopeni"
+                />
+                <div>
+                  <img
+                    src="./img/pizza-modal-window/holopeni.png"
+                    alt="халапенью"
+                  />
+                  <p>Острый халапеньо</p>
+                  <p>39 &#8381;</p>
+                </div>
+              </label>
             </div>
-            <div class="choice-pizza__grid__elem">
-              <img
-                src="./img/pizza-modal-window/chili.png"
-                alt="острый цыпленок"
-              />
-              <p>Острый цыпленок</p>
-              <p>59 &#8381;</p>
+            <div class="choice-pizza__grid__elem custom-check">
+              <label for="chili">
+                <input type="checkbox" id="chili" name="chili" value="chili" />
+                <div>
+                  <img
+                    src="./img/pizza-modal-window/chili.png"
+                    alt="острый цыпленок"
+                  />
+                  <p>Острый цыпленок</p>
+                  <p>59 &#8381;</p>
+                </div>
+              </label>
             </div>
           </div>
-          <button>Добавить в корзину за 625 &#8381;</button>
+          <div class="button_orange">
+            <button>Добавить в корзину за 625 &#8381;</button>
+          </div>
         </div>
       </div>
     </div>
@@ -110,7 +195,12 @@
             </div>
             <div id="header_sticky" class="header__elem">
               <nav class="header__menu">
-                <a href="#head"><img id="header_sticky_logo" src="./img/header/logo.svg" alt=""></a>
+                <a href="#head"
+                  ><img
+                    id="header_sticky_logo"
+                    src="./img/header/logo.svg"
+                    alt=""
+                /></a>
                 <ul>
                   <li><a href="#pizza">Пицца</a></li>
                   <li><a href="#combo">Комбо</a></li>
