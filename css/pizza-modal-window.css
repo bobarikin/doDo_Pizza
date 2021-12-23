@@ -160,6 +160,7 @@
 .custom-check > label > div {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 /* grid сетка */
